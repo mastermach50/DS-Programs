@@ -1,8 +1,8 @@
-// Write a program to sort a user defined array of integers using bubble sort
+// Write a program to sort a user defined array of integers using bubble sort.
 
 #include <stdio.h>
 
-// A function to print the array [arr] till position [n]
+// A function to print the array [arr] till position [n].
 void print_array(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
@@ -12,22 +12,22 @@ void print_array(int arr[], int n) {
 
 void main() {
 
-    // Get number of elements
+    // Get number of elements.
     int n;
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    // Get elements
+    // Get elements.
     int arr[n];
     for (int i = 0; i < n; i++) {
         printf("Enter element [%d]: ", i + 1);
         scanf("%d", &arr[i]);
     }
 
-    // Print array before sorting
+    // Print array before sorting.
     print_array(arr, n);
 
-    // Bubble sort with optimizations (phase optimization and swapped flag optimization)
+    // Bubble sort with optimizations (phase optimization and swapped flag optimization).
     for (int i = 0; i < n; i++) {
         int swapped = 0;
         for (int j = 0; j < n - 1 - i; j++) {
@@ -43,6 +43,6 @@ void main() {
         }
     }
 
-    // Print array after sorting
+    // Print array after sorting.
     print_array(arr, n);
 }

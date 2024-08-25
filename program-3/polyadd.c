@@ -26,7 +26,7 @@ int read_poly(int start) {
 }
 
 // A function to display the values in the array from the position given as an argument [start]
-// to the position given as the second argument [finish]. Both inclusive.
+// to the position given as the second argument [finish] (both inclusive).
 void print_poly(int start, int finish) {
     for (int i = start; i < finish + 1; i++) {
         printf("%dx^%d ", poly[i].coeff, poly[i].exp);
