@@ -13,7 +13,8 @@ Write a program to sort a user defined array of integers using bubble sort.
 1. Set startb=finisha+1 and finishb = startb + number of terms of the second polynomial - 1.
 1. Set avail=finishb+1.
 1. Create a function void attach(int coeff, int exp, int avail) that sets poly[avail].coeff = coeff and poly[avail].exp = exp if avail + 1 < 100.
-1. ```while (starta <= finisha && startb <= finishb) {
+1.  ```
+    while (starta <= finisha && startb <= finishb) {
         if (poly[starta].exp == poly[startb].exp) {
             attach(poly[starta].coeff + poly[startb].coeff, poly[starta].exp, avail);
             increment starta, startb, avail.
@@ -24,15 +25,20 @@ Write a program to sort a user defined array of integers using bubble sort.
             attach(poly[startb].coeff, poly[startb].exp, avail);
             increment startb, avail.
         }
-    }```
-1. ```while (starta <= finisha) {
+    }
+    ```
+1.  ```
+    while (starta <= finisha) {
         attach(poly[starta].coeff, poly[starta].exp, avail);
         increment starta, avail.
-    }```
-1. ```while (startb <= finishb) {
+    }
+    ```
+1.  ```
+    while (startb <= finishb) {
         attach(poly[startb].coeff, poly[startb].exp, avail);
         increment startb, avail.
-    }```
+    }
+    ```
 1. Set avail_end = avail - 1
 1. Loop from i=finishb+1 to avail_end and print the values poly[i].
 1. STOP
