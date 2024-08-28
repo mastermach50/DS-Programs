@@ -1,0 +1,21 @@
+Enter the size of the matrix (rows columns): 3 3
+Enter element [0][0]: 0
+Enter element [0][1]: 0
+Enter element [0][2]: 0
+Enter element [1][0]: 4
+Enter element [1][1]: 0
+Enter element [1][2]: 5
+Enter element [2][0]: 0
+Enter element [2][1]: 0
+Enter element [2][2]: 2
+The sparse matrix is
+0 0 0 
+4 0 5 
+0 0 2 
+
+
+The sparse matrix representation is
+3 3 3 
+1 0 4 
+1 2 5 
+2 2 2

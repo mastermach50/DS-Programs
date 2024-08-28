@@ -1,0 +1,8 @@
+Enter number of elements: 5
+Enter element [1]: 8
+Enter element [2]: 2
+Enter element [3]: 9
+Enter element [4]: 4
+Enter element [5]: 6
+Enter element to search: 4
+4 was found at position 4

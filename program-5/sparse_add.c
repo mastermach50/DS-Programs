@@ -46,9 +46,7 @@ void add_matrix(int m1[100][3], int m2[100][3], int res[100][3]) {
 
     // Each of these is to track the next row to be read in [m1] and [m2]
     // and the next row to be written to in [res].
-    int k = 1;
-    int k1 = 1;
-    int k2 = 1;
+    int k = 1, k1 = 1, k2 = 1;
 
     // Loop until all rows are read in either [m1] or [m2].
     // In different cases different things will happen.

@@ -18,7 +18,7 @@ int read_poly(int start) {
     scanf("%d", &n_terms);
 
     for (int i = start; i < start + n_terms; i++) {
-        printf("Enter term [%d] (coeff exp): ", i + 1);
+        printf("Enter term [%d] (coeff exp): ", i + 1 - start);
         scanf("%d %d", &poly[i].coeff, &poly[i].exp);
     }
 
