@@ -6,27 +6,41 @@ This repo contains the C source code of all the programs done in the Data Struct
 .
 ├── .clang-format
 ├── .envrc
+├── .gitignore
 ├── flake.lock
 ├── flake.nix
-├── .gitignore
 ├── program-1
-│   ├── linear_search
-│   └── linear_search.c
+│   ├── linear_search.c
+│   ├── output.txt
+│   └── README.md
 ├── program-2
-│   ├── bubble_sort
-│   └── bubble_sort.c
+│   ├── bubble_sort.c
+│   ├── output.txt
+│   └── README.md
 ├── program-3
-│   ├── polyadd
-│   └── polyadd.c
+│   ├── output.txt
+│   ├── polyadd.c
+│   └── README.md
 ├── program-4
-│   ├── sparse_rep
+│   ├── output.txt
+│   ├── README.md
 │   └── sparse_rep.c
 ├── program-5
-│   ├── sparse_add
+│   ├── output.txt
 │   └── sparse_add.c
 ├── program-6
-│   ├── sparse_transpose
+│   ├── output.txt
 │   └── sparse_transpose.c
+├── program-7
+│   └── stack.c
+├── program-8
+│   └── queue.c
+├── program-9
+│   ├── circular_queue.c
+│   └── README.md
 └── README.md
 ```
-Each folder contains the source code of the program and it's linux x86_64 binary.
+Each folder contains
+- source code of the program (*.c file) 
+- The output of the program (output.txt file)
+- The algorithm of the program (README.md file)
