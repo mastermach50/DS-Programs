@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 // Declare the queue and other global variables
-int queue[7];
-int max = 7;
+const int MAX = 7;
+int queue[MAX];
 int front = -1;
 int rear = -1;
 
@@ -13,7 +13,7 @@ void enqueue() {
     scanf("%d", &data);
 
     // When the queue is full
-    if ((rear + 1) % max == front) {
+    if ((rear + 1) % MAX == front) {
         printf("Queue is full\n");
     }
     // When the queue is empty
@@ -23,28 +23,25 @@ void enqueue() {
     }
     // Every other case
     else {
-        rear = (rear + 1) % max;
+        rear = (rear + 1) % MAX;
         queue[rear] = data;
     }
 }
 
 void dequeue() {
-    int data;
     // When the queue is empty
     if (front == -1 && rear == -1) {
         printf("Queue is empty\n");
     }
     // When the queue has a single element
     else if (front == rear) {
-        data = queue[front];
-        printf("%d was dequeued", data);
+        printf("%d was dequeued", queue[front]);
         front = rear = -1;
     }
     // Every other case
     else {
-        data = queue[front];
-        printf("%d was dequeued", data);
-        front = (front + 1) % max;
+        printf("%d was dequeued", queue[front]);
+        front = (front + 1) % MAX;
     }
 }
 
@@ -58,7 +55,7 @@ void display() {
         int i = front;
         while (i != rear) {
             printf("%d ", queue[i]);
-            i = (i + 1) % max;
+            i = (i + 1) % MAX;
         }
         printf("%d\n", queue[rear]);
     }

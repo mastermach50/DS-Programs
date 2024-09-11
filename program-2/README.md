@@ -22,4 +22,4 @@ Write a program to sort a user defined array of integers using bubble sort.
 1. STOP
 
 #### Result:-
-Program executed successfully.
+The program executed successfully.

@@ -3,7 +3,6 @@
 #### Aim:-
 Write a program to read two polynomials and store them in an array and calculate their sum.
 
-
 #### Algorithm:-
 1. START
 1. Create a struct Poly with two attributes int coeff and int exp.
@@ -45,4 +44,4 @@ Write a program to read two polynomials and store them in an array and calculate
 1. STOP
 
 #### Result:-
-Program executed successfully.
+The program executed successfully.

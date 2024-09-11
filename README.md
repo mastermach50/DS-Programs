@@ -1,7 +1,23 @@
 # Data Structures Programs
+
 This repo contains the C source code of all the programs done in the Data Structures course and it's lab for semester 3 under KTU.
 
+# Index / Status Table
+
+| Sl No | Program Name          | Code | Code Comments | Algorithm | Output |
+| ----- | --------------------- | ---- | ------------- | --------- | ------ |
+| 1     | Linear Search         | ✅   | ✅            | ✅        | ✅     |
+| 2     | Bubble Sort           | ✅   | ✅            | ✅        | ✅     |
+| 3     | Polynomial Addition   | ✅   | ✅            | ✅        | ✅     |
+| 4     | Sparse Representation | ✅   | ✅            | ✅        | ✅     |
+| 5     | Sparse Addition       | ✅   | ✅            |           | ✅     |
+| 6     | Sparse Transpose      | ✅   | ✅            |           | ✅     |
+| 7     | Stack                 | ✅   |               |           |        |
+| 8     | Queue                 | ✅   |               |           |        |
+| 9     | Circular Queue        | ✅   | ✅            | ✅        |        |
+
 # File Structure
+
 ```
 .
 ├── .clang-format
@@ -40,7 +56,9 @@ This repo contains the C source code of all the programs done in the Data Struct
 │   └── README.md
 └── README.md
 ```
+
 Each folder contains
-- source code of the program (*.c file) 
+
+- source code of the program (\*.c file)
 - The output of the program (output.txt file)
 - The algorithm of the program (README.md file)

@@ -28,4 +28,4 @@ Write a program to read a sparse matrix and convert it into a sparse matrix repr
 1. STOP
 
 #### Result:-
-Program executed successfully.
+The program executed successfully.
