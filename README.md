@@ -6,15 +6,15 @@ This repo contains the C source code of all the programs done in the Data Struct
 
 | Sl No | Program Name          | Code | Code Comments | Algorithm | Output |
 | ----- | --------------------- | ---- | ------------- | --------- | ------ |
-| 1     | Linear Search         | ✅   | ✅            | ✅        | ✅     |
-| 2     | Bubble Sort           | ✅   | ✅            | ✅        | ✅     |
-| 3     | Polynomial Addition   | ✅   | ✅            | ✅        | ✅     |
-| 4     | Sparse Representation | ✅   | ✅            | ✅        | ✅     |
-| 5     | Sparse Addition       | ✅   | ✅            |           | ✅     |
-| 6     | Sparse Transpose      | ✅   | ✅            |           | ✅     |
-| 7     | Stack                 | ✅   |               |           |        |
-| 8     | Queue                 | ✅   |               |           |        |
-| 9     | Circular Queue        | ✅   | ✅            | ✅        |        |
+| 1     | [Linear Search](./program-1/)         | ✅   | ✅            | ✅        | ✅     |
+| 2     | [Bubble Sort](./program-2/)           | ✅   | ✅            | ✅        | ✅     |
+| 3     | [Polynomial Addition](./program-3/)   | ✅   | ✅            | ✅        | ✅     |
+| 4     | [Sparse Representation](./program-4/) | ✅   | ✅            | ✅        | ✅     |
+| 5     | [Sparse Addition](./program-5/)       | ✅   | ✅            |           | ✅     |
+| 6     | [Sparse Transpose](./program-6/)      | ✅   | ✅            |           | ✅     |
+| 7     | [Stack](./program-7/)                 | ✅   |               |           |        |
+| 8     | [Queue](./program-8/)                 | ✅   |               |           |        |
+| 9     | [Circular Queue](./program-9/)        | ✅   | ✅            | ✅        |        |
 
 # File Structure
 
