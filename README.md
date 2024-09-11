@@ -26,34 +26,11 @@ This repo contains the C source code of all the programs done in the Data Struct
 ├── flake.lock
 ├── flake.nix
 ├── program-1
-│   ├── linear_search.c
+│   ├── code.c
 │   ├── output.txt
 │   └── README.md
-├── program-2
-│   ├── bubble_sort.c
-│   ├── output.txt
-│   └── README.md
-├── program-3
-│   ├── output.txt
-│   ├── polyadd.c
-│   └── README.md
-├── program-4
-│   ├── output.txt
-│   ├── README.md
-│   └── sparse_rep.c
-├── program-5
-│   ├── output.txt
-│   └── sparse_add.c
-├── program-6
-│   ├── output.txt
-│   └── sparse_transpose.c
-├── program-7
-│   └── stack.c
-├── program-8
-│   └── queue.c
-├── program-9
-│   ├── circular_queue.c
-│   └── README.md
+.
+.
 └── README.md
 ```
 
