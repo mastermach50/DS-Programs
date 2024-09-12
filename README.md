@@ -27,7 +27,7 @@ This repo contains the C source code of all the programs done in the Data Struct
 ├── .gitignore
 ├── flake.lock
 ├── flake.nix
-├── program-1
+├── program-01
 │   ├── code.c
 │   ├── output.txt
 │   └── README.md
