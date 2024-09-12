@@ -1,4 +1,4 @@
-// Write a program to find the transpose of a sparse matrix
+// Write a program to find the transpose of a sparse matrix.
 
 #include <stdio.h>
 

@@ -1,7 +1,9 @@
+// Write a program to implement a circular queue.
+
 #include <stdio.h>
 
 // Declare the queue and other global variables
-const int MAX = 7;
+const int MAX = 5;
 int queue[MAX];
 int front = -1;
 int rear = -1;

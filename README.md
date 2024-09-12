@@ -4,8 +4,8 @@ This repo contains the C source code of all the programs done in the Data Struct
 
 # Index / Status Table
 
-| Sl No | Program Name          | Code | Code Comments | Algorithm | Output |
-| ----- | --------------------- | ---- | ------------- | --------- | ------ |
+| Sl No | Program Name                          | Code | Code Comments | Algorithm | Output |
+| ----- | ------------------------------------- | ---- | ------------- | --------- | ------ |
 | 1     | [Linear Search](./program-1/)         | ✅   | ✅            | ✅        | ✅     |
 | 2     | [Bubble Sort](./program-2/)           | ✅   | ✅            | ✅        | ✅     |
 | 3     | [Polynomial Addition](./program-3/)   | ✅   | ✅            | ✅        | ✅     |
@@ -15,6 +15,8 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 7     | [Stack](./program-7/)                 | ✅   |               |           |        |
 | 8     | [Queue](./program-8/)                 | ✅   |               |           |        |
 | 9     | [Circular Queue](./program-9/)        | ✅   | ✅            | ✅        |        |
+| 10    | [Double Ended Queue](./program-10/)   |      |               |           |        |
+| 11    | [Priority Queue](./program-11/)       |      |               |           |        |
 
 # File Structure
 
@@ -36,6 +38,6 @@ This repo contains the C source code of all the programs done in the Data Struct
 
 Each folder contains
 
-- source code of the program (\*.c file)
+- The source code of the program (\*.c file)
 - The output of the program (output.txt file)
 - The algorithm of the program (README.md file)
