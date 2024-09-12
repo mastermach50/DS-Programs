@@ -6,15 +6,15 @@ This repo contains the C source code of all the programs done in the Data Struct
 
 | Sl No | Program Name                          | Code | Code Comments | Algorithm | Output |
 | ----- | ------------------------------------- | ---- | ------------- | --------- | ------ |
-| 1     | [Linear Search](./program-1/)         | ✅   | ✅            | ✅        | ✅     |
-| 2     | [Bubble Sort](./program-2/)           | ✅   | ✅            | ✅        | ✅     |
-| 3     | [Polynomial Addition](./program-3/)   | ✅   | ✅            | ✅        | ✅     |
-| 4     | [Sparse Representation](./program-4/) | ✅   | ✅            | ✅        | ✅     |
-| 5     | [Sparse Addition](./program-5/)       | ✅   | ✅            |           | ✅     |
-| 6     | [Sparse Transpose](./program-6/)      | ✅   | ✅            |           | ✅     |
-| 7     | [Stack](./program-7/)                 | ✅   |               |           |        |
-| 8     | [Queue](./program-8/)                 | ✅   |               |           |        |
-| 9     | [Circular Queue](./program-9/)        | ✅   | ✅            | ✅        |        |
+| 1     | [Linear Search](./program-01/)         | ✅   | ✅            | ✅        | ✅     |
+| 2     | [Bubble Sort](./program-02/)           | ✅   | ✅            | ✅        | ✅     |
+| 3     | [Polynomial Addition](./program-03/)   | ✅   | ✅            | ✅        | ✅     |
+| 4     | [Sparse Representation](./program-04/) | ✅   | ✅            | ✅        | ✅     |
+| 5     | [Sparse Addition](./program-05/)       | ✅   | ✅            |           | ✅     |
+| 6     | [Sparse Transpose](./program-06/)      | ✅   | ✅            |           | ✅     |
+| 7     | [Stack](./program-07/)                 | ✅   |               |           |        |
+| 8     | [Queue](./program-08/)                 | ✅   |               |           |        |
+| 9     | [Circular Queue](./program-09/)        | ✅   | ✅            | ✅        |        |
 | 10    | [Double Ended Queue](./program-10/)   |      |               |           |        |
 | 11    | [Priority Queue](./program-11/)       |      |               |           |        |
 
