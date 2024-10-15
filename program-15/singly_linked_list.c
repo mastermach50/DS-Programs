@@ -8,30 +8,42 @@ struct node {
 
 struct node *head = NULL;
 
-int getLast() {
-    struct node *temp;
-    temp = head;
+int isEmpty() { return (head == NULL); }
+
+int isSingle() { return (head->next == NULL); }
+
+struct node* getLast() {
+    struct node *temp = head;
     while (temp->next != NULL) {
         temp = temp->next;
     }
     return temp;
 }
 
-int isEmpty() { return (head == NULL); }
+struct node* getNewnode() {
+    struct node *newnode = (struct node *)malloc(sizeof(struct node));
+    newnode->next = NULL;
+    
+    printf("Enter the data: ");
+    scanf("%d", &newnode->data);
+    
+    return newnode;
+}
 
-int isSingle() { return (head->next == NULL); }
+int isValidPos(int pos) {
+	struct node *temp = head;
+    int len = 0;
+    while (temp != NULL) {
+        len++;
+        temp = temp->next;
+    }
+
+	return (pos <= len && pos >= 1);
+}
 
 void ins_beg() {
 
-    // Create a newnode
-    struct node *newnode;
-    newnode = (struct node *)malloc(sizeof(struct node));
-    newnode->next = NULL;
-
-    // Get data from user and insert it into newnode
-    int data;
-    printf("Enter the data:");
-    scanf("%d", &newnode->data);
+    struct node *newnode = getNewnode();
 
     if (isEmpty()) {
         head = newnode;
@@ -43,15 +55,7 @@ void ins_beg() {
 
 void ins_end() {
 
-    // Create a newnode
-    struct node *newnode;
-    newnode = (struct node *)malloc(sizeof(struct node));
-    newnode->next = NULL;
-
-    // Get data from user and insert it into newnode
-    int data;
-    printf("Enter the data:");
-    scanf("%d", &newnode->data);
+    struct node *newnode = getNewnode();
 
     if (isEmpty()) {
         head = newnode;
@@ -62,48 +66,29 @@ void ins_end() {
 }
 
 void ins_pos() {
-    struct node *temp, *prev;
-    temp = head;
 
-    // Read the position ro insert to
     int pos;
-    printf("\nEnter the position to add:");
+    printf("Enter the position to add: ");
     scanf("%d", &pos);
 
-    // Find the length of the linked list
-    int count = 0;
-    while (temp != NULL) {
-        temp = temp->next;
-        count++;
-    }
+    struct node *newnode = getNewnode();
 
-    // Create a newnode
-    struct node *newnode;
-    newnode = (struct node *)malloc(sizeof(struct node));
-    newnode->next = NULL;
-
-    // Get data from user and insert it into newnode
-    int data;
-    printf("Enter the data:");
-    scanf("%d", &newnode->data);
-
-    if ((pos > count) || (pos < 1)) {
-        printf("Invalid position");
+    if (!isValidPos(pos)) {
+        printf("Invalid position\n");
     } else {
-        temp = head;
-        for (int i = 1; i < pos; i++) {
-            prev = temp;
+        struct node *temp = head;
+        for (int i = 1; i < pos-1; i++) {
             temp = temp->next;
         }
-        prev->next = newnode;
-        newnode->next = temp;
+        newnode->next = temp->next;
+        temp->next = newnode;
     }
 }
 
 void del_beg() {
 
     if (isEmpty()) {
-        printf("Linked list empty");
+        printf("Linked list empty\n");
     } else if (isSingle()) {
         free(head);
         head = NULL;
@@ -116,15 +101,15 @@ void del_beg() {
 }
 
 void del_end() {
-    struct node *temp = NULL;
+
     if (isEmpty()) {
-        printf("Linked list empty");
+        printf("Linked list empty\n");
     } else if (isSingle()) {
         free(head);
         head = NULL;
     } else {
         // Traverse the list till we get the second to last node
-        temp = head;
+    	struct node *temp = head;
         while (temp->next->next != NULL) {
             temp = temp->next;
         }
@@ -135,45 +120,40 @@ void del_end() {
 }
 
 void del_pos() {
-    struct node *temp, *prev;
-    temp = head;
 
-    // Read the position ro insert to
+    // Read the position to delete from
     int pos;
-    printf("\nEnter the position to delete:");
+    printf("Enter the position to delete: ");
     scanf("%d", &pos);
 
-    // Find the length of the linked list
-    int count = 0;
-    while (temp != NULL) {
-        temp = temp->next;
-        count++;
-    }
-
-    if ((pos > count) || (pos < 1)) {
-        printf("Invalid position");
+    if (!isValidPos(pos)) {
+        printf("Invalid position\n");
     } else {
-        temp = head;
-        for (int i = 1; i < pos; i++) {
-            prev = temp;
+        struct node *temp = head, *to_del;
+        for (int i = 1; i < pos-1; i++) {
             temp = temp->next;
         }
-        prev->next = temp->next;
-        free(temp);
+        to_del = temp->next;
+        temp->next = temp->next->next;
+        free(to_del);
     }
 }
 
 void display() {
-    struct node *temp;
-    for (temp = head; temp != NULL; temp = temp->next) {
-        printf("%d->", *temp);
-    }
-    printf("NULL");
+	if (isEmpty()) {
+		printf("[ Empty List ]\n");
+	} else {
+    	struct node *temp;
+    	for (temp = head; temp != NULL; temp = temp->next) {
+    	    printf("%d-> ", temp->data);
+    	}
+    	printf("NULL\n");
+	}
 }
 
 int main() {
     while (1) {
-        printf("\n\n*****MENU*****\n");
+        printf("\nWhat would you like to do?\n");
         printf("1.Insert a node at beginning\n");
         printf("2.Insert a node at end\n");
         printf("3.Insert a node at a given position\n");
@@ -210,8 +190,11 @@ int main() {
             display();
             break;
         case 8:
-            printf("***Program Terminated***");
+            printf("Exiting\n");
             return 0;
+        default:
+            printf("[ Invalid Choice ]\n");
+            break;
         }
     }
 }
