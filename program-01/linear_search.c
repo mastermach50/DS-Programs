@@ -1,36 +1,32 @@
-// Write a program to conduct linear search in a user defined array of integers.
+// Write a program to conduct linear search in a user defined array of integers
 
 #include <stdio.h>
 
 void main() {
-
-    // Get number of elements.
+    // Get the elements in the array from the user
     int n;
-    printf("Enter number of elements: ");
+    printf("Enter number of elements in the array: ");
     scanf("%d", &n);
-
-    // Get elements.
     int arr[n];
+    printf("Enter the elements in the array: ");
     for (int i = 0; i < n; i++) {
-        printf("Enter element [%d]: ", i + 1);
         scanf("%d", &arr[i]);
     }
 
-    // Get search term.
+    // Get the element to search for from the user
     int search;
-    printf("Enter element to search: ");
+    printf("Enter the element to search for: ");
     scanf("%d", &search);
 
-    // Loop over elements and search.
-    int i;
-    for (i = 0; i < n; i++) {
+    // Loop through the array and search for the element
+    // If the element is found exit from the program
+    for (int i = 0; i < n; i++) {
         if (arr[i] == search) {
-            printf("%d was found at position %d", search, i + 1);
-            break;
+            printf("%d was found at position %d", search, i);
+            exit(0);
         }
     }
-    // This line executes if the loop did not break and ran to completion.
-    if (i == n) {
-        printf("%d was not found in the array", search);
-    }
+
+    // If the element was not found then print that it was not found
+    printf("%d was not found int the array", search);
 }
