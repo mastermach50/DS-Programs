@@ -13,7 +13,7 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 5     | [Sparse Addition](./program-05/)         | ✅         |
 | 6     | [Sparse Transpose](./program-06/)        | ✅         |
 | 7     | [Stack](./program-07/)                   | ✅         |
-| 8     | [Queue](./program-08/)                   |           |
+| 8     | [Queue](./program-08/)                   | ✅         |
 | 9     | [Circular Queue](./program-09/)          |           |
 | 10    | [Double Ended Queue](./program-10/)      |           |
 | 11    | [Priority Queue](./program-11/)          | ✅         |
