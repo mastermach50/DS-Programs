@@ -9,7 +9,7 @@ int stack[size], top = -1;
 // Define a function to print all the elements in the stack
 void display() {
     if (top < 0) {
-        printf("Stack is Empty\n");
+        printf("[ Stack is Empty ]\n");
         return;
     }
 
@@ -21,8 +21,8 @@ void display() {
 
 // Define a function to push an element to the stack
 void push() {
-    if (top >= size) {
-        printf("Stack Overflow\n");
+    if (top >= size - 1) {
+        printf("[ Stack Overflow ]\n");
         return;
     }
 
@@ -33,7 +33,7 @@ void push() {
 // Define a function to pop an element from the stack
 void pop() {
     if (top < 0) {
-        printf("Stack Underflow\n");
+        printf("[ Stack Underflow ]\n");
         return;
     }
 
@@ -43,7 +43,7 @@ void pop() {
 // Define a function to find the  element at the top of the stack
 void peek() {
     if (top < 0) {
-        printf("Stack is Empty\n");
+        printf("[ Stack is Empty ]\n");
         return;
     }
 
@@ -58,7 +58,7 @@ void main() {
                "3. Pop\n"
                "4. Peek\n"
                "0. Exit\n");
-        printf("> ");
+        printf("Enter your choice: ");
         scanf("%d", &ch);
 
         switch (ch) {
@@ -75,10 +75,13 @@ void main() {
             peek();
             break;
         case 0:
-            exit(0);
+            return;
             break;
         default:
+            printf("[ Invalid Choice ]");
             break;
         }
+
+        printf("\n");
     }
 }
