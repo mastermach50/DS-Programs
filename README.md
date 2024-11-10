@@ -7,7 +7,7 @@ This repo contains the C source code of all the programs done in the Data Struct
 | Sl No | Program Name                                                                            | Completed |
 | ----- | --------------------------------------------------------------------------------------- | --------- |
 | 1     | [Polynomial Addition Using Array](./polynomial_addition_array/)                         | ✅         |
-| 2     | [Sparse Matrix Representation](./sparse_matrix_representation/)                         |           |
+| 2     | [Sparse Matrix Representation](./sparse_matrix_representation/)                         | ✅         |
 | 3     | [Sparse Matrix Addition](./sparse_matrix_addition/)                                     |           |
 | 4     | [Sparse Matrix Transpose](./sparse_matrix_transpose/)                                   |           |
 | 5     | [Stack Implementation Using Array](./stack_using_array/)                                |           |
