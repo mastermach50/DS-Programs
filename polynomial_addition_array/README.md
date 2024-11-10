@@ -1,4 +1,4 @@
-# Program-1 Polynomial Addition Using Array
+# [Program-1] Polynomial Addition Using Array
 ## Aim:-
 Write a program to add two polynomials using an array
 
