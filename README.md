@@ -4,26 +4,37 @@ This repo contains the C source code of all the programs done in the Data Struct
 
 ## Index / Status Table
 
-| Sl No | Program Name                             | Completed |
-| ----- | ---------------------------------------- | --------- |
-| 1     | [Linear Search](./program-01/)           | ✅         |
-| 2     | [Bubble Sort](./program-02/)             | ✅         |
-| 3     | [Polynomial Addition](./program-03/)     | ✅         |
-| 4     | [Sparse Representation](./program-04/)   | ✅         |
-| 5     | [Sparse Addition](./program-05/)         | ✅         |
-| 6     | [Sparse Transpose](./program-06/)        | ✅         |
-| 7     | [Stack](./program-07/)                   | ✅         |
-| 8     | [Queue](./program-08/)                   | ✅         |
-| 9     | [Circular Queue](./program-09/)          |           |
-| 10    | [Double Ended Queue](./program-10/)      |           |
-| 11    | [Priority Queue](./program-11/)          | ✅         |
-| 12    | [Infix To Postfix](./program-12/)        | ✅         |
-| 13    | [Postfix Evaluation](./program-13/)      | ✅         |
-| 14    | [Binary Search](./program-14/)           | ✅         |
-| 15    | [Singly Linked List](./program-15/)      |           |
-| 16    | [Doubly Linked List](./program-16/)      |           |
-| 17    | [Stack Using Linked List](./program-17/) |           |
-| 18    | [Queue Using Linked List](./program-18/) |           |
+| Sl No | Program Name                                                                            | Completed |
+| ----- | --------------------------------------------------------------------------------------- | --------- |
+| 1     | [Polynomial Addition Using Array](./polynomial_addition_array/)                         | ✅         |
+| 2     | [Sparse Matrix Representation](./sparse_matrix_representation/)                         |           |
+| 3     | [Sparse Matrix Addition](./sparse_matrix_addition/)                                     |           |
+| 4     | [Sparse Matrix Transpose](./sparse_matrix_transpose/)                                   |           |
+| 5     | [Stack Implementation Using Array](./stack_using_array/)                                |           |
+| 6     | [Conversion Of Infix To Postfix Expression](./infix_to_postfix/)                        |           |
+| 7     | [Postfix Evaluation](./postfix_evaluation/)                                             |           |
+| 8     | [Queue](./queue/)                                                                       |           |
+| 9     | [Circular Queue](./circular_queue/)                                                     |           |
+| 10    | [Double Ended Queue](./double_ended_queue/)                                             |           |
+| 11    | [Priority Queue](./priority_queue/)                                                     |           |
+| 12    | [Single Linked List](./single_linked_list/)                                             |           |
+| 13    | [Doubly Linked List](./doubly_linked_list/)                                             |           |
+| 14    | [Stack Implementation Using Linked List](./stack_using_linked_list/)                    |           |
+| 15    | [Queue Implementation Using Linked List](./queue_using_linked_list/)                    |           |
+| 16    | [Polynomial Addition Using Linked List](./polynomial_addition_linked_list/)             |           |
+| 17    | [Polynomial Multiplication Using Linked List](./polynomial_multiplication_linked_list/) |           |
+| 18    | [Linear Search](./linear_search/)                                                       |           |
+| 19    | [Binary Search](./binary_search/)                                                       |           |
+| 20    | [Bubble Sort](./bubble_sort/)                                                           |           |
+| 21    | [Insertion Sort](./insertion_sort/)                                                     |           |
+| 22    | [Selection Sort](./selection_sort/)                                                     |           |
+| 23    | [Quick Sort](./quick_sort/)                                                             |           |
+| 24    | [Merge Sort](./merge_sort/)                                                             |           |
+| 25    | [Heap Sort](./heap_sort/)                                                               |           |
+| 26    | [Binary Tree Using Array](./binary_tree_array/)                                         |           |
+| 27    | [Binary Tree Using Linked List](./binary_tree_linked_list/)                             |           |
+| 28    | [BFS, DFS](./bfs_dfs/)                                                                  |           |
+| 29    | [Hashing](./hashing/)                                                                   |           |
 
 ## File Structure
 
@@ -36,15 +47,7 @@ This repo contains the C source code of all the programs done in the Data Struct
 ├── flake.nix
 ├── program-01
 │   ├── code.c
-│   ├── output.txt
-│   └── README.md
 .
 .
 └── README.md
 ```
-
-Each folder contains
-
-- The source code of the program (\*.c file)
-- The output of the program (output.txt file)
-- The algorithm of the program (README.md file)

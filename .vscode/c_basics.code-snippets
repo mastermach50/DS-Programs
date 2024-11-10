@@ -27,5 +27,15 @@
 			"\t$0",
 			"}"
 		]
+	},
+
+	"Better printf" : {
+		"prefix": "bprintf",
+		"body": "printf(\"$0\");"
+	},
+
+	"Better scanf" : {
+		"prefix": "bscanf",
+		"body": "scanf(\"%$1\", $0);"
 	}
 }
