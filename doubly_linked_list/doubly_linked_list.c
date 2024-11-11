@@ -3,6 +3,7 @@
 
 // Create a struct for each node in the linked list
 struct node {
+    struct node *prev;
     int data;
     struct node *next;
 };
@@ -31,6 +32,7 @@ struct node *getNewnode() {
         exit(-1);
     }
     newnode->next = NULL;
+    newnode->prev = NULL;
     printf("Enter element: ");
     scanf("%d", &newnode->data);
     return newnode;
@@ -43,16 +45,18 @@ void display() {
     }
 
     temp = head;
-    while (temp->next != NULL) {
-        printf("%d-> ", temp->data);
+    printf("NULL");
+    while (temp != NULL) {
+        printf(" <-%d-> ", temp->data);
         temp = temp->next;
     }
-    printf("%d-> NULL\n", temp->data);
+    printf("NULL\n");
 }
 
 void insBeg() {
     newnode = getNewnode();
     newnode->next = head;
+    head->prev = newnode;
     head = newnode;
 }
 
@@ -61,7 +65,7 @@ void insPos() {
     printf("Enter the position to insert the element into: ");
     scanf("%d", &pos);
 
-    if (pos > getLength()+1) {
+    if (pos > getLength() + 1) {
         printf("[ Invalid Position ]\n");
         return;
     }
@@ -74,7 +78,9 @@ void insPos() {
     }
 
     newnode = getNewnode();
+    newnode->prev = temp;
     newnode->next = temp->next;
+    temp->next->prev = newnode;
     temp->next = newnode;
 }
 
@@ -91,7 +97,7 @@ void insEnd() {
 
     newnode = getNewnode();
     temp->next = newnode;
-    newnode->next = NULL;
+    newnode->prev = temp;
 }
 
 void delBeg() {
@@ -102,6 +108,7 @@ void delBeg() {
 
     todel = head;
     head = head->next;
+    head->prev = NULL;
     free(todel);
 }
 
@@ -128,6 +135,7 @@ void delPos() {
     }
 
     todel = temp->next;
+    temp->next->next->prev = temp;
     temp->next = temp->next->next;
     free(todel);
 }

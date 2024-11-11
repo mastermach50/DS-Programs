@@ -18,7 +18,7 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 10    | [Double Ended Queue](./double_ended_queue/)                                             |           |
 | 11    | [Priority Queue](./priority_queue/)                                                     |           |
 | 12    | [Singly Linked List](./singly_linked_list/)                                             | [code] 🥲🔫 |
-| 13    | [Doubly Linked List](./doubly_linked_list/)                                             |           |
+| 13    | [Doubly Linked List](./doubly_linked_list/)                                             | [code]    |
 | 14    | [Stack Implementation Using Linked List](./stack_using_linked_list/)                    |           |
 | 15    | [Queue Implementation Using Linked List](./queue_using_linked_list/)                    |           |
 | 16    | [Polynomial Addition Using Linked List](./polynomial_addition_linked_list/)             |           |
