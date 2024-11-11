@@ -33,8 +33,9 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 25    | [Heap Sort](./heap_sort/)                                                               |           |
 | 26    | [Binary Tree Using Array](./binary_tree_array/)                                         |           |
 | 27    | [Binary Tree Using Linked List](./binary_tree_linked_list/)                             |           |
-| 28    | [BFS, DFS](./bfs_dfs/)                                                                  |           |
-| 29    | [Hashing](./hashing/)                                                                   |           |
+| 28    | [BFS](./bfs/)                                                                           | ✅         |
+| 29    | [DFS](./dfs/)                                                                           |           |
+| 30    | [Hashing](./hashing/)                                                                   |           |
 
 ## File Structure
 
