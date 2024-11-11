@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+void display(int n, int arr[n]) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
 void bubble_sort(int n, int arr[n]) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -11,10 +18,7 @@ void bubble_sort(int n, int arr[n]) {
         }
     }
 
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+    display(n, arr);
 }
 
 void main() {

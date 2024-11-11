@@ -26,7 +26,7 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 18    | [Linear Search](./linear_search/)                                                       | [code]    |
 | 19    | [Binary Search](./binary_search/)                                                       | [code]    |
 | 20    | [Bubble Sort](./bubble_sort/)                                                           | [code]    |
-| 21    | [Insertion Sort](./insertion_sort/)                                                     |           |
+| 21    | [Insertion Sort](./insertion_sort/)                                                     | [code]    |
 | 22    | [Selection Sort](./selection_sort/)                                                     |           |
 | 23    | [Quick Sort](./quick_sort/)                                                             |           |
 | 24    | [Merge Sort](./merge_sort/)                                                             |           |
