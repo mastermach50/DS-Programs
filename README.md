@@ -13,7 +13,7 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 5     | [Stack Implementation Using Array](./stack_using_array/)                                | ✅         |
 | 6     | [Conversion Of Infix To Postfix Expression](./infix_to_postfix/)                        | ✅         |
 | 7     | [Postfix Evaluation](./postfix_evaluation/)                                             | ✅         |
-| 8     | [Queue](./queue/)                                                                       |           |
+| 8     | [Queue Implementation Using Array](./queue_using_array/)                                | ✅         |
 | 9     | [Circular Queue](./circular_queue/)                                                     |           |
 | 10    | [Double Ended Queue](./double_ended_queue/)                                             |           |
 | 11    | [Priority Queue](./priority_queue/)                                                     |           |

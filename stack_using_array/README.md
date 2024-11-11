@@ -7,7 +7,7 @@ Write a program to implement a stack using an array.
 2. Define MAX as 5 and declare `int stack[MAX]` and `int top=-1`.
 3. Declare a function `display()`, consider steps 4 to 5.
 4. If `top == -1` display that the stack is empty.
-5. Otherwise loop from i=0 to i<=top and print stack[i].
+5. Otherwise loop from i=0 to i=top and print stack[i].
 6. Declare a function `push()`, consider steps 7 to 8.
 7. If `top >= MAX-1` display that the stack is full and return.
 8. Otherwise get an element from the user, increment top and set that element as `stack[top]`.
