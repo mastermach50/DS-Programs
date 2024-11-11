@@ -46,9 +46,12 @@ This repo contains the C source code of all the programs done in the Data Struct
 ├── .gitignore
 ├── flake.lock
 ├── flake.nix
-├── program-01
-│   ├── code.c
-.
+├── <program-name>
+│   ├── <program-name>.c
+│   └── README.md
+.  
 .
 └── README.md
 ```
+
+Each folder contains the C source code of the program in `<program-name>.c` and the relevent algorithm in `README.md` in that folder.
