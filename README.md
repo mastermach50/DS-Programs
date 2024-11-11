@@ -23,8 +23,8 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 15    | [Queue Implementation Using Linked List](./queue_using_linked_list/)                    |           |
 | 16    | [Polynomial Addition Using Linked List](./polynomial_addition_linked_list/)             |           |
 | 17    | [Polynomial Multiplication Using Linked List](./polynomial_multiplication_linked_list/) |           |
-| 18    | [Linear Search](./linear_search/)                                                       |           |
-| 19    | [Binary Search](./binary_search/)                                                       |           |
+| 18    | [Linear Search](./linear_search/)                                                       | [code]    |
+| 19    | [Binary Search](./binary_search/)                                                       | [code]    |
 | 20    | [Bubble Sort](./bubble_sort/)                                                           |           |
 | 21    | [Insertion Sort](./insertion_sort/)                                                     |           |
 | 22    | [Selection Sort](./selection_sort/)                                                     |           |
