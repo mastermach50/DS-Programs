@@ -30,6 +30,7 @@ void insertion_sort(int n, int arr[n]) {
         arr[j + 1] = key;
     }
 
+    // Finally display the sorted array
     display(n, arr);
 }
 
