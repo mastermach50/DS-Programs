@@ -31,7 +31,7 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 23    | [Quick Sort](./quick_sort/)                                                             | [code] ❌ |
 | 24    | [Merge Sort](./merge_sort/)                                                             |           |
 | 25    | [Heap Sort](./heap_sort/)                                                               |           |
-| 26    | [Binary Tree Using Array](./binary_tree_array/)                                         |           |
+| 26    | [Binary Tree Using Array](./binary_tree_array/)                                         | [code]    |
 | 27    | [Binary Tree Using Linked List](./binary_tree_linked_list/)                             |           |
 | 28    | [BFS](./bfs/)                                                                           | ✅         |
 | 29    | [DFS](./dfs/)                                                                           |           |
