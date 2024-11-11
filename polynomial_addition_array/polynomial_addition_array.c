@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define MAXSIZE 100
 
 struct term {

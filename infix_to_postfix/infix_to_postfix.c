@@ -5,12 +5,16 @@
 
 #define MAX 50
 
-// define a stack the operators
+// define a stack for the operators
 char stack[MAX];
 int top = -1;
 
 // Define two character arrays for the infix and postfix expression
 char infix[MAX], postfix[MAX];
+
+// Define simple push and pop functions for the stack
+void push(int e) { stack[++top] = e; }
+int  pop()       { return stack[top--]; }
 
 // Define a function that returns the precedence of the operator passed to it
 int precedence(char op) {
@@ -50,33 +54,33 @@ void infixToPostfix() {
 
         // If it is an opening bracket push it to stack
         } else if (c == '(') {
-            stack[++top] = c;
+            push(c);
 
         // If the character is a closing bracket then pop and insert elements from the
         // stack into the postfix expression until you encounter an opening bracket
         } else if (c == ')') {
             while (top != -1 && stack[top] != '(') {
-                postfix[k++] = stack[top--];
+                postfix[k++] = pop();
             }
             // Pop out the opening bracket
-            stack[top--];
+            pop();
 
         // If the characher is an operator then
         } else {
             // If its precedence is lower than the element at the top of the stack
             // pop out that element and insert it into the postfix expression
             while (top != -1 && precedence(stack[top]) > precedence(c)) {
-                postfix[k++] = stack[top--];
+                postfix[k++] = pop();
             }
 
             // finally push the operator onto the stack
-            stack[++top] = c;
+            push(c);
         }
     }
 
     // Pop out and insert any remaining elements in the stack into the postfix expression
     while (top != -1) {
-        postfix[k++] = stack[top--];
+        postfix[k++] = pop();
     }
 
     // Finally insert the string terminating character into the postfix expression
