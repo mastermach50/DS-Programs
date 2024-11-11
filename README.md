@@ -28,11 +28,11 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 20    | [Bubble Sort](./bubble_sort/)                                                           | [code]    |
 | 21    | [Insertion Sort](./insertion_sort/)                                                     | [code]    |
 | 22    | [Selection Sort](./selection_sort/)                                                     | [code]    |
-| 23    | [Quick Sort](./quick_sort/)                                                             | [code] ❌ |
+| 23    | [Quick Sort](./quick_sort/)                                                             | [code] ❌  |
 | 24    | [Merge Sort](./merge_sort/)                                                             |           |
 | 25    | [Heap Sort](./heap_sort/)                                                               |           |
 | 26    | [Binary Tree Using Array](./binary_tree_array/)                                         | [code]    |
-| 27    | [Binary Tree Using Linked List](./binary_tree_linked_list/)                             |           |
+| 27    | [Binary Tree Using Linked List](./binary_tree_linked_list/)                             | [code] ❓  |
 | 28    | [BFS](./bfs/)                                                                           | ✅         |
 | 29    | [DFS](./dfs/)                                                                           |           |
 | 30    | [Hashing](./hashing/)                                                                   |           |
