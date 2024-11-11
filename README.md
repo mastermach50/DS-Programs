@@ -9,7 +9,7 @@ This repo contains the C source code of all the programs done in the Data Struct
 | 1     | [Polynomial Addition Using Array](./polynomial_addition_array/)                         | ✅         |
 | 2     | [Sparse Matrix Representation](./sparse_matrix_representation/)                         | ✅         |
 | 3     | [Sparse Matrix Addition](./sparse_matrix_addition/)                                     | ✅         |
-| 4     | [Sparse Matrix Transpose](./sparse_matrix_transpose/)                                   |           |
+| 4     | [Sparse Matrix Transpose](./sparse_matrix_transpose/)                                   | ✅         |
 | 5     | [Stack Implementation Using Array](./stack_using_array/)                                |           |
 | 6     | [Conversion Of Infix To Postfix Expression](./infix_to_postfix/)                        |           |
 | 7     | [Postfix Evaluation](./postfix_evaluation/)                                             |           |
