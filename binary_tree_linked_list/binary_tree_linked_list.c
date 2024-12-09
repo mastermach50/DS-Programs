@@ -47,7 +47,8 @@ void postorder(struct node *root) {
     }
 }
 
-void main() { struct node *root = getNewnode(0);
+void main() {
+    struct node *root = getNewnode(0);
     root->left = getNewnode(1);
     root->right = getNewnode(2);
     root->left->left = getNewnode(3);
